@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.main{
+  background-image: url(img/yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg);
+  background-size: cover;
+  background-clip: content-box;
+  /* filter: blur(8px); */
+  height: 99vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+h1{
+    font-size: 50px;
+}
+
+.cont{
+    border: 1px solid;
+    min-width:30% ;
+    min-height: 70vh;
+    border-radius: 5px;
+    background-color: aliceblue;
+    position: relative;
+    background-image: url(img/249.jpg);
+    background-size: cover;
+  background-clip: content-box;
+    /* display: flex; */
+}
+.date{
+    width: 70%;
+    margin-left: 40px;
+    height: 30px;
+    border-radius: 7px;
+    /* border: none; */
+    padding: 5px;
+  }
+  .date1{
+    width: 70%;
+    margin-left: 28px;
+    height: 30px;
+    border-radius: 7px;
+    /* border: none; */
+    padding: 5px;
+}
+button {
+    /* Variables */
+    --button_radius: 0.75em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+  }
+  
+  .button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+    position: relative;
+    
+  }
+  
+  button:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+  }
+  
+  button:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+  }
+  .btn1{
+    position: relative;
+    left: 40%;
+    top: 5%;
+  }
+.burth{
+
+    position: relative;
+    left: 40%;
+    top: 5%;
+}
+h2{
+  padding: 10px;
+  text-align: center;
+  margin-top: 20%;
+}
+
+@media screen and (max-width: 720px) {
+ p{
+  text-align: center;
+ }
+  .date{
+  display: block;
+  margin: 0%;
+  width: 90%;
+ }
+ .date1{
+  display: block;
+  margin: 0%;
+  width: 90%;
+ }
+ .cont{
+  width: 98%;
+  padding: 0;
+ }
+}
